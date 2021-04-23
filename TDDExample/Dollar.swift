@@ -14,7 +14,7 @@ class Dollar: NSObject {
         self.amount = amount
     }
     
-    func times(multiplier: Int) {
-        amount *= multiplier
+    func times(multiplier: Int) -> Dollar {
+        return Dollar(amount: amount * multiplier)
     }
 }

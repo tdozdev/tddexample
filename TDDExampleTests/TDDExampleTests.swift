@@ -22,8 +22,10 @@ class TDDExampleTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let five = Dollar(amount: 5)
-        five.times(multiplier: 2)
-        XCTAssertTrue(10 == five.amount)
+        var product = five.times(multiplier: 2)
+        XCTAssertTrue(10 == product.amount)
+        product = five.times(multiplier: 3)
+        XCTAssertTrue(15 == product.amount)
     }
 
     func testPerformanceExample() throws {
