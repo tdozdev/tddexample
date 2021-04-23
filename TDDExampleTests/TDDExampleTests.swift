@@ -18,7 +18,7 @@ class TDDExampleTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testMultiplication() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let five = Dollar(amount: 5)
@@ -26,6 +26,11 @@ class TDDExampleTests: XCTestCase {
         XCTAssertTrue(10 == product.amount)
         product = five.times(multiplier: 3)
         XCTAssertTrue(15 == product.amount)
+    }
+    
+    func testEquality() throws {
+        XCTAssertTrue(Dollar(amount: 5).equals(object: Dollar(amount: 5)))
+        XCTAssertFalse(Dollar(amount: 5).equals(object: Dollar(amount: 6)))
     }
 
     func testPerformanceExample() throws {

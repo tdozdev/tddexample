@@ -17,4 +17,9 @@ class Dollar: NSObject {
     func times(multiplier: Int) -> Dollar {
         return Dollar(amount: amount * multiplier)
     }
+    
+    func equals(object: AnyObject) -> Bool {
+        guard let dollar = object as? Dollar else { return false }
+        return amount == dollar.amount
+    }
 }
