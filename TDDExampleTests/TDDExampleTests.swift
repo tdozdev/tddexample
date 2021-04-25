@@ -22,24 +22,24 @@ class TDDExampleTests: XCTestCase {
     func testMultiplication() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let five = Dollar(amount: 5)
-        XCTAssertTrue(Dollar(amount: 10).equals(object: five.times(multiplier: 2)))
-        XCTAssertTrue(Dollar(amount: 15).equals(object: five.times(multiplier: 3)))
+        let five = Money.dollar(amount: 5)
+        XCTAssertTrue(Money.dollar(amount: 10).equals(object: five.times(multiplier: 2)))
+        XCTAssertTrue(Money.dollar(amount: 15).equals(object: five.times(multiplier: 3)))
     }
     
     // equals()
     func testEquality() throws {
-        XCTAssertTrue(Dollar(amount: 5).equals(object: Dollar(amount: 5)))
-        XCTAssertFalse(Dollar(amount: 5).equals(object: Dollar(amount: 6)))
-        XCTAssertTrue(Franc(amount: 5).equals(object: Franc(amount: 5)))
-        XCTAssertFalse(Franc(amount: 5).equals(object: Franc(amount: 6)))
-        XCTAssertFalse(Franc(amount: 5).equals(object: Dollar(amount: 5)))
+        XCTAssertTrue(Money.dollar(amount: 5).equals(object: Money.dollar(amount: 5)))
+        XCTAssertFalse(Money.dollar(amount: 5).equals(object: Money.dollar(amount: 6)))
+        XCTAssertTrue(Money.franc(amount: 5).equals(object: Money.franc(amount: 5)))
+        XCTAssertFalse(Money.franc(amount: 5).equals(object: Money.franc(amount: 6)))
+        XCTAssertFalse(Money.franc(amount: 5).equals(object: Money.dollar(amount: 5)))
     }
     
     func testFancMultiplication() {
-        let five = Franc(amount: 5)
-        XCTAssertTrue(Franc(amount: 10).equals(object: five.times(multiplier: 2)))
-        XCTAssertTrue(Franc(amount: 15).equals(object: five.times(multiplier: 3)))
+        let five = Money.franc(amount: 5)
+        XCTAssertTrue(Money.franc(amount: 10).equals(object: five.times(multiplier: 2)))
+        XCTAssertTrue(Money.franc(amount: 15).equals(object: five.times(multiplier: 3)))
     }
 
     func testPerformanceExample() throws {
