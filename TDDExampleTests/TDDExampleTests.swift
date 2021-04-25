@@ -32,6 +32,12 @@ class TDDExampleTests: XCTestCase {
         XCTAssertTrue(Dollar(amount: 5).equals(object: Dollar(amount: 5)))
         XCTAssertFalse(Dollar(amount: 5).equals(object: Dollar(amount: 6)))
     }
+    
+    func testFancMultiplication() {
+        let five = Franc(amount: 5)
+        XCTAssertTrue(Franc(amount: 10).equals(object: five.times(multiplier: 2)))
+        XCTAssertTrue(Franc(amount: 15).equals(object: five.times(multiplier: 3)))
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
