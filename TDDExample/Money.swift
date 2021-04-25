@@ -16,6 +16,6 @@ class Money: NSObject {
     
     func equals(object: AnyObject) -> Bool {
         guard let money = object as? Money else { return false }
-        return amount == money.amount
+        return amount == money.amount && type(of: self) == type(of: money)
     }
 }
