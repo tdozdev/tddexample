@@ -7,19 +7,9 @@
 
 import UIKit
 
-class Franc: NSObject {
-    private var amount: Int
-    
-    init(amount: Int) {
-        self.amount = amount
-    }
+class Franc: Money {
     
     func times(multiplier: Int) -> Franc {
         return Franc(amount: amount * multiplier)
-    }
-    
-    func equals(object: AnyObject) -> Bool {
-        guard let franc = object as? Franc else { return false }
-        return amount == franc.amount
     }
 }
