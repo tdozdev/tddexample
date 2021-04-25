@@ -8,7 +8,7 @@
 import UIKit
 
 class Dollar: NSObject {
-    var amount: Int
+    private var amount: Int
     
     init(amount: Int) {
         self.amount = amount
