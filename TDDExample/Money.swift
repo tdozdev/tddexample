@@ -9,9 +9,11 @@ import UIKit
 
 class Money: NSObject {
     internal var amount: Int = 0
+    internal var currency: String = ""
     
-    init(amount: Int) {
+    init(amount: Int, currency: String) {
         self.amount = amount
+        self.currency = currency
     }
     
     func equals(object: AnyObject) -> Bool {
@@ -24,10 +26,10 @@ class Money: NSObject {
     }
     
     static func dollar(amount: Int) -> Dollar {
-        return Dollar(amount: amount)
+        return Dollar(amount: amount, currency: "USD")
     }
     
     static func franc(amount: Int) -> Franc {
-        return Franc(amount: amount)
+        return Franc(amount: amount, currency: "CHF")
     }
 }
