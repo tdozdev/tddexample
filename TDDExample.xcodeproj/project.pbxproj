@@ -15,8 +15,6 @@
 		C7794B142632F8B800199613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7794B122632F8B800199613 /* LaunchScreen.storyboard */; };
 		C7794B1F2632F8B800199613 /* TDDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794B1E2632F8B800199613 /* TDDExampleTests.swift */; };
 		C7794B2A2632F8B800199613 /* TDDExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794B292632F8B800199613 /* TDDExampleUITests.swift */; };
-		C7794B3B2632F8D200199613 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794B3A2632F8D200199613 /* Dollar.swift */; };
-		C7794B402635841500199613 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794B3F2635841500199613 /* Franc.swift */; };
 		C7794B452635856300199613 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794B442635856300199613 /* Money.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +50,6 @@
 		C7794B252632F8B800199613 /* TDDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7794B292632F8B800199613 /* TDDExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDExampleUITests.swift; sourceTree = "<group>"; };
 		C7794B2B2632F8B800199613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7794B3A2632F8D200199613 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
-		C7794B3F2635841500199613 /* Franc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
 		C7794B442635856300199613 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +108,6 @@
 				C7794B102632F8B800199613 /* Assets.xcassets */,
 				C7794B122632F8B800199613 /* LaunchScreen.storyboard */,
 				C7794B152632F8B800199613 /* Info.plist */,
-				C7794B3A2632F8D200199613 /* Dollar.swift */,
-				C7794B3F2635841500199613 /* Franc.swift */,
 				C7794B442635856300199613 /* Money.swift */,
 			);
 			path = TDDExample;
@@ -269,8 +263,6 @@
 			files = (
 				C7794B452635856300199613 /* Money.swift in Sources */,
 				C7794B0C2632F8B600199613 /* ViewController.swift in Sources */,
-				C7794B3B2632F8D200199613 /* Dollar.swift in Sources */,
-				C7794B402635841500199613 /* Franc.swift in Sources */,
 				C7794B082632F8B600199613 /* AppDelegate.swift in Sources */,
 				C7794B0A2632F8B600199613 /* SceneDelegate.swift in Sources */,
 			);

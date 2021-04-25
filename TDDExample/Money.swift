@@ -18,18 +18,23 @@ class Money: NSObject {
     
     func equals(object: AnyObject) -> Bool {
         guard let money = object as? Money else { return false }
-        return amount == money.amount && type(of: self) == type(of: money)
+        return amount == money.amount && currency == money.currency
     }
     
     func times(multiplier: Int) -> Money {
-        fatalError("override 하세요!")
+        return Money(amount: amount * multiplier, currency: currency)
     }
     
-    static func dollar(amount: Int) -> Dollar {
-        return Dollar(amount: amount, currency: "USD")
+    func description() -> String {
+        return "\(amount) \(currency)"
     }
     
-    static func franc(amount: Int) -> Franc {
-        return Franc(amount: amount, currency: "CHF")
+    static func dollar(amount: Int) -> Money {
+        return Money(amount: amount, currency: "USD")
     }
+    
+    static func franc(amount: Int) -> Money {
+        return Money(amount: amount, currency: "CHF")
+    }
+    
 }
